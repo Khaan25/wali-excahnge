@@ -5,9 +5,18 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #FAFAFA;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* Green: #86EE28 */
+/* Blue: #56527F */
+/* Off White : #FAFAFA */
+/* Green : #1BA558 */
+/* Button color 
+Green : #86EE28 */

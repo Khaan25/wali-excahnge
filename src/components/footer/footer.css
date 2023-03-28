@@ -1,0 +1,49 @@
+.footer-bg{
+    background: #56527F;
+}
+.footer-text{
+    color: white;
+}
+.footer-logo img{
+    height: auto;
+    width: 50%;
+}
+.footer-links{
+    padding: 0;
+    color: #d8a72d;
+}
+.footer-links li{
+    list-style: none;
+    padding: 0;
+}
+.footer-links li a{
+    text-decoration: none;
+    color: #d8a72d;
+}
+
+
+.copy-right{
+    color: #d8a72d;
+    /* color: #1ba558; */
+}
+@media screen and (max-width: 500px){
+    
+.copy-right{
+    margin-top: 15px;
+    font-size: 13px;
+}
+}
+
+.contact a{
+    color: #d8a72d;
+    font-size: 13px;
+}
+
+
+
+
+
+.email-temps a{
+   font-size: 13px;
+   color: #d8a72d;
+}

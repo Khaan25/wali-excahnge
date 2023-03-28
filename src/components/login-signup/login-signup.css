@@ -1,0 +1,78 @@
+.signup-signin-page{}
+.forgot-password,
+  .forgot-password a {
+    text-align: right;
+    font-size: 13px;
+    padding-top: 10px;
+    color: #7f7d7d;
+    margin: 0;
+  }
+  .forgot-password a {
+    color: #167bff;
+  }
+  .form-box-shadow{
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #56527F;
+    border-radius: 10px;
+    box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.3);
+  }
+  .form-control{
+    border:1px solid #56527F;
+    box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.3);
+  }
+  .form-control:focus, .form-control:hover{
+    color: #212529;
+    background-color: #fff;
+    border-color: #56527F;
+    outline: 0;
+    box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.3);
+  }
+  .submit-btn{
+    background-color: #56527F;
+    width: 100%;
+    padding: 7px 20px;
+    border-radius: 20px;
+  }
+  .submit-btn:hover, .submit-btn:focus, .submit-btn:active{
+    background-color: rgb(86, 82, 127, 0.9);
+
+  }
+  .signup-bg{
+    background: url(../../images/bitcoin.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+  }
+.login-bg{
+    background: url(../../images/login-bg-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+}
+
+.input-password{
+  position: relative;
+}
+
+.input-password .eye-btn{
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  border: none;
+}
+.input-password .eye-btn svg{
+  color: #56527F;
+}
+.input-password input{
+  padding-right: 50px;
+}
+

@@ -1,38 +1,35 @@
-.App {
-  text-align: center;
+h1, h2, h3, h4, h5{
+  color: #56527F;
+}
+.home-header-content h1, .home-header-content h5 i{
+  color: white;
+}
+.img-div img{
+  height: auto;
+  width: 100%;
+}
+.text-blue{
+  color: #56527F;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn-blue{
+  background-color: #56527F;
+  color: white;
+  border-radius: 25px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.btn-blue:hover,.btn-blue:focus, .btn-blue:active{
+  background-color: #c79c38;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+input[type=number]::-webkit-inner-spin-button, .input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-div{
+  border: 1px solid #56527F;
+  border-radius: 10px;
+  box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.3);
 }

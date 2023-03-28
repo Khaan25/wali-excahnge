@@ -1,0 +1,83 @@
+.help-page{
+    min-height: 90vh;
+}
+
+.help-section{
+    border: 1px solid #56527F;
+    border-radius: 10px;
+    box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.3);
+}
+.help-section .help-btn{
+    width: 100%;
+}
+.help-section .help-btn a{
+    padding: 10px 100px;
+    border: 1px solid white;
+}
+
+.excetion-msg{
+    font-weight: 500;
+}
+
+.reset-code input{
+    padding: 15px 20px;
+    border: 1px solid #56527F;
+    border-radius: 10px;
+    box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.3);
+    line-height: 30px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    letter-spacing: 20px;
+}
+.reset-code input:hover, .reset-code input:focus{
+    outline: none;
+}
+
+
+
+/* New Password  */
+.password input{
+    padding: 8px 20px;
+    border: 1px solid #56527F;
+    border-radius: 10px;
+    box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.3);
+}
+.password input:hover, .password input:focus{
+    outline: none;
+}
+
+.input-password{
+    position: relative;
+  }
+  
+  .input-password .eye-btn{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border: none;
+  }
+  .input-password .eye-btn svg{
+    color: #56527F;
+  }
+  .input-password input{
+    padding-right: 50px;
+  }
+
+
+  @media screen and (max-width: 500px){
+    .help-section a h5{
+        font-size: 15px !important;
+    }
+    .excetion-msg{
+        font-weight: 500;
+        font-size: 11px;
+    }
+  }

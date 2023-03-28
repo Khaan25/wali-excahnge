@@ -1,0 +1,41 @@
+/* Deposit Page Style */
+.deposit-page{
+  min-height: 90vh;
+}
+.form-div{
+  border: 1px solid #56527F;
+  border-radius: 10px;
+  box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.3);
+}
+.form-deposit input{
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #56527F;
+  padding: 5px 10px;
+  box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.3);
+  margin-bottom: 20px;
+}
+.form-deposit input:hover, .form-deposit input:focus{
+  border: 1px solid #56527F;
+  outline: none;
+}
+
+
+input[type=number]::-webkit-inner-spin-button, .input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+}
+
+.qr-code{
+  width: 250px;
+  border-radius: 10px;
+  border: 1px solid #56527F;
+  box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.3);
+  margin-bottom: 20px;
+}

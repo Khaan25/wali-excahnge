@@ -1,0 +1,57 @@
+.navbar-brand .logo img{
+    height: auto !important;
+    width: 60% !important;
+}
+.nav-item .nav-NavLink{
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+.nav-item .nav-NavLink:hover{
+    color:#56527F !important;
+    border-bottom: 3px solid #1ba558;
+    padding-bottom: 5px;
+    transition: ease 200ms;
+    border-bottom-width: fit-content;
+}
+.active{
+    color:#56527F !important;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #1ba558;
+    transition: ease 200ms;
+}
+@media screen and (max-width: 768px) {
+    .nav-item{
+       padding-bottom: 10px;
+    } 
+    .nav-item .nav-NavLink:hover{
+        padding-bottom: 3px;
+
+    }
+    .active{
+        padding-bottom: 3px;
+ 
+    }
+}
+/* @media screen and (max-width: 450px) {
+    .nav-item{
+       padding-bottom: 10px;
+    } 
+    .nav-item .nav-NavLink:hover{
+        padding-bottom: 3px;
+
+    }
+    .active{
+        padding-bottom: 3px;
+ 
+    }
+} */
+
+.profile-img img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.profile-img {
+    border: none;
+}
