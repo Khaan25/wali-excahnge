@@ -10,24 +10,25 @@ import Deposit from './components/deposit-withdraw/Deposit';
 import Withdraw from './components/deposit-withdraw/Withdraw';
 import Help from './components/deposit-withdraw/Help';
 import Plans from './components/Plans/Plans';
-
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
     <>
       <BrowserRouter>
-         <Routes>
-         <Route path="/" element={<Home />} />
-         <Route path="/sign-in" element={<Login/>} />
-         <Route path="/sign-up" element={<Signup/>} />
-         <Route path="/profile" element={<Profile/>} />
-         <Route path='/disclaimer' element={ <Disclaimer/> }/>
-         <Route path='/deposit' element={ <Deposit/> } />
-         <Route path='/withdraw' element={ <Withdraw/> } /> 
-         <Route path='/help' element={<Help/>} />
-         <Route path='/plans' element={ <Plans/> } />
-         </Routes>      
-        
+        <Toaster />
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/sign-in" element={<Login />} />
+          <Route path="/sign-up" element={<Signup />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path='/disclaimer' element={<Disclaimer />} />
+          <Route path='/deposit' element={<Deposit />} />
+          <Route path='/withdraw' element={<Withdraw />} />
+          <Route path='/help' element={<Help />} />
+          <Route path='/plans' element={<Plans />} />
+        </Routes>
       </BrowserRouter>
     </>
   );
