@@ -15,7 +15,7 @@ const Profile = () => {
   const formData = new FormData()
   formData.append(
     "cust_id",
-    JSON.parse(localStorage.getItem("waliexchange")).cust_id
+    JSON.parse(localStorage.getItem("waliexchange")).cust_id ?? '1'
   )
 
   var config = {
