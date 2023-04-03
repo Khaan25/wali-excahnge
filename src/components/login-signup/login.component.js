@@ -65,7 +65,7 @@ const Login = () => {
         var config = {
           method: 'post',
           maxBodyLength: Infinity,
-          url: 'http://waliexchange.com/api2/public/index.php/customer_login',
+          url: 'https://waliexchange.com/api2/public/index.php/customer_login',
           data: data
         };
 

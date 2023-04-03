@@ -29,7 +29,7 @@ const Home = () => {
   var config = {
     method: "post",
     maxBodyLength: Infinity,
-    url: "http://waliexchange.com/api2/public/index.php/wx_get_pkg",
+    url: "https://waliexchange.com/api2/public/index.php/wx_get_pkg",
     data: formData,
   }
 
@@ -60,7 +60,7 @@ const Home = () => {
     var config = {
       method: "post",
       maxBodyLength: Infinity,
-      url: "http://waliexchange.com/api2/public/index.php/wx_purchase_pkg",
+      url: "https://waliexchange.com/api2/public/index.php/wx_purchase_pkg",
       data: data,
     }
 

@@ -21,7 +21,7 @@ const Profile = () => {
   var config = {
     method: "post",
     maxBodyLength: Infinity,
-    url: "http://waliexchange.com/api2/public/index.php/get_customer_details",
+    url: "https://waliexchange.com/api2/public/index.php/get_customer_details",
     data: formData,
   }
 

@@ -15,7 +15,7 @@ export default function Help() {
     console.log("handel forget", email)
     axios
       .post(
-        "http://waliexchange.com/api2/public/index.php/forgotUserPwd",
+        "https://waliexchange.com/api2/public/index.php/forgotUserPwd",
         { email },
         {
           headers: {
