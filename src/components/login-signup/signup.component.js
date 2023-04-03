@@ -14,6 +14,7 @@ import { toast } from "react-hot-toast"
 const SignUp = () => {
   const queryClient = useQueryClient()
   const navigate = useNavigate()
+  const [showPassword, setShowPassword] = useState(false);
   // const [values, setValues] = useState({
   //   password: "",
   //   showPassword: false,
@@ -94,6 +95,8 @@ const SignUp = () => {
     },
   })
 
+  console.log(values)
+
   return (
     <>
       <Navbar />
@@ -117,6 +120,7 @@ const SignUp = () => {
                     <input
                       name="firstName"
                       onChange={handleChange}
+                      value={values.firstName}
                       type="text"
                       className="form-control"
                       placeholder="First name"
@@ -126,6 +130,7 @@ const SignUp = () => {
                     <label>Last name</label>
                     <input
                       name="lastName"
+                      value={values.lastName}
                       onChange={handleChange}
                       type="text"
                       className="form-control"
@@ -139,6 +144,7 @@ const SignUp = () => {
                       className="form-control"
                       placeholder="Enter email"
                       name="email"
+                      value={values.email}
                       onChange={handleChange}
                     />
                   </div>
@@ -149,23 +155,25 @@ const SignUp = () => {
                       className="form-control"
                       placeholder="Enter Phone"
                       name="mobile"
+                      // value={values.mobile}
                       onChange={handleChange}
                     />
                   </div>
                   <div className="mb-3 input-password">
                     <label>Password</label>
                     <input
-                      // type={values.showPassword ? "text" : "password"}
-                      onChange={handleChange("password")}
+                      type={showPassword ? "text" : "password"}
+                      onChange={handleChange}
+                      name="password"
                       value={values.password}
-                      type="password"
                       className="form-control"
                       placeholder="Enter password"
                     />
                     <span
                       className="btn eye-btn"
-                      onClick={handleClickShowPassword}
-                      onMouseDown={handleMouseDownPassword}>
+                      onClick={() => setShowPassword(!showPassword)}
+                    // onMouseDown={handleMouseDownPassword}
+                    >
                       {values.showPassword ? (
                         <svg
                           width="30"

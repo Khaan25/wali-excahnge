@@ -11,13 +11,8 @@ import { toast } from "react-hot-toast";
 import { useFormik } from "formik";
 import { useQueryClient } from "@tanstack/react-query";
 const Login = () => {
-
-  const queryClient = useQueryClient()
   const navigate = useNavigate();
-  // const [values, setValues] = useState({
-  //   password: "",
-  //   showPassword: false,
-  // });
+  const [showPassword, setShowPassword] = useState(false);
 
   // const handleClickShowPassword = () => {
   //   setValues({ ...values, showPassword: !values.showPassword });
@@ -119,7 +114,7 @@ const Login = () => {
                   <div className="mb-3 input-password">
                     <label>Password</label>
                     <input
-                      // type={values.showPassword ? "text" : "password"}
+                      type={showPassword ? "text" : "password"}
                       name="password"
                       onChange={handleChange}
                       value={values.password}
@@ -127,8 +122,7 @@ const Login = () => {
                       placeholder="Enter password"
                     />
                     <span className="btn eye-btn"
-                      // onClick={handleClickShowPassword}
-                      // onMouseDown={handleMouseDownPassword}
+                      onClick={()=>setShowPassword(!showPassword)}
                     >
                       {values.showPassword ?
                         <svg width="30" height="30" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
