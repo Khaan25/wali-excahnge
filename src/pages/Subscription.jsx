@@ -12,9 +12,9 @@ const Subscription = () => {
   const formData = new FormData()
   formData.append(
     "cust_id",
-    JSON.parse(localStorage.getItem("waliexchange")).cust_id
+    JSON.parse(localStorage.getItem("waliexchange"))?.cust_id ?? '1'
   )
-  formData.append("new_pass", JSON.parse(localStorage.getItem("wali")).password)
+  formData.append("new_pass", JSON.parse(localStorage.getItem("wali"))?.password ?? 'password')
   formData.append("confirm_pass", "new-password")
 
   var config = {
@@ -44,7 +44,7 @@ const Subscription = () => {
     var data = new FormData()
     data.append(
       "cust_id",
-      JSON.parse(localStorage.getItem("waliexchange")).cust_id
+      JSON.parse(localStorage.getItem("waliexchange"))?.cust_id ?? '1'
     )
     data.append("pkg_id", pkg_id)
 
